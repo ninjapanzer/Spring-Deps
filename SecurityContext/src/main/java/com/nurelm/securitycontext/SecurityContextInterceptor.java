@@ -4,12 +4,7 @@
  */
 package com.nurelm.securitycontext;
 
-import com.nurelm.interceptordeps.AccessLevel;
-import com.nurelm.interceptordeps.AuthData;
-import com.nurelm.interceptordeps.AuthStruct;
-import com.nurelm.interceptordeps.NavigationStruct;
-import com.nurelm.interceptordeps.RequestSigning;
-import com.nurelm.interceptordeps.UserMonitorImpl;
+import com.nurelm.interceptordeps.*;
 import com.nurelm.securitycontext.util.SecurityContextUtilImpl;
 import java.util.Collection;
 import java.util.Map;
