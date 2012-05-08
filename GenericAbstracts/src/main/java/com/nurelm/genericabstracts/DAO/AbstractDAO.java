@@ -125,7 +125,7 @@ public abstract class AbstractDAO<T extends AbstractEntity> implements AbstractD
   public void remove(T entity) {
     T localEntity = getEntityManager().merge(entity);
     getEntityManager().remove(localEntity);
-    getEntityManager().detach(entity);
+    //getEntityManager().detach(entity);
   }
 
   /**

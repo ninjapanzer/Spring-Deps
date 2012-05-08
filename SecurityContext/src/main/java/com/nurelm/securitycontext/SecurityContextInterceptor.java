@@ -41,6 +41,9 @@ public class SecurityContextInterceptor extends HandlerInterceptorAdapter {
    */
   @Override
   public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
+    if(request.getSession().isNew()){
+      
+    }
     if (request.getMethod().toLowerCase().equals("get")) {
       if (request.getSession().getAttribute("AjaxRequestSigning") != null) {
         RequestSigning rs = (RequestSigning) request.getSession().getAttribute("AjaxRequestSigning");

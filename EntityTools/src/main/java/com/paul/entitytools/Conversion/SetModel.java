@@ -4,6 +4,7 @@
  */
 package com.paul.entitytools.Conversion;
 
+import java.util.LinkedHashSet;
 import java.util.Set;
 
 /*
@@ -27,6 +28,10 @@ public class SetModel {
   }
 
   public Set getSet() {
+    if(set == null){
+      return new LinkedHashSet();
+    }
+
     return set;
   }
 
