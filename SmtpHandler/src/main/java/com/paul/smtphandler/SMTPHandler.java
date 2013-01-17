@@ -56,6 +56,7 @@ public class SMTPHandler {
   }
 
   public void setSMTPConf(SMTPConfigStruct SMTPConf) {
+
     this.SMTPConf = SMTPConf;
   }
 
